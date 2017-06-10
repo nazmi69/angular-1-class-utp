@@ -17,7 +17,8 @@ var app = angular.module("starterApp", ["ngRoute"])
 		.otherwise({redirectTo: '/index'})
 }])
 
-.controller('MainCtrl', [function(){
+.controller('MainCtrl', ['$scope', function($scope){
+	console.log($scope);
 	console.log("This is the MainCtrl");
 }])
 
