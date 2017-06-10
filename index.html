@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="starterApp">
 <head>
 	<title>Index 1</title>
 
@@ -8,9 +8,6 @@
 
     <!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
-	<!-- Custom JS -->
-	<script type="text/javascript" src="js/scripts.js"></script>
 </head>
 <body>
 	<nav class="navbar navbar-inverse navbar-fixed-top">
@@ -26,21 +23,31 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="/#!/index">Home</a></li>
+            <li><a href="/#!/about">About</a></li>
+            <li><a href="/#!/contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 
-    <div class="container">
+    <div>
+    	<div ng-view></div>
+    </div>
 
-      <div class="starter-template" style="padding-top:60px; text-align:center;">
-        <h1>Bootstrap starter template</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-      </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
 
-    </div><!-- /.container -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Angular JS -->
+    <script src="js/angular.min.js"></script>
+
+    <!-- Angular JS Route for routing -->
+    <script src="js/angular-route.min.js"></script>
+
+    <!-- Custom JS -->
+    <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
